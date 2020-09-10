@@ -2,55 +2,25 @@
     <div class="container-fluid">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
-                <h3 class="subheading">Gym Classes</h3>
-                <h2 class="mb-1">Workout Classes</h2>
+{{--                <h3 class="subheading">@lang('site-lang.danceDirections-title')</h3>--}}
+                <h2 class="mb-1">@lang('site-lang.danceDirections-title')</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="package-program ftco-animate">
-                    <a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url('{{asset('images/program-1.jpg')}}');">
-                        <span>Learn More</span>
-                    </a>
-                    <div class="text mt-3">
-                        <h3><a href="#">Body Building</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <div class="row d-flex justify-content-center">
+            @foreach($dancedir as $item)
+                <div class="col-md-6 col-lg-4">
+                    <div class="package-program ftco-animate">
+                        <div href="#" class="img d-flex justify-content-center align-items-center disabled" style="background-image: url('{{asset($item->path_image)}}');">
+                            <!-- <span>Learn More</span> -->
+                        </div>
+                        <div class="text mt-3">
+                            <h3><a href="#" class='disabled'>{{$locale == 'ua' ? $item->title_ua : $item->title_ru}}</a></h3>
+
+                            <p>{{$locale == 'ua' ? $item->text_ua : $item->text_ru}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="package-program ftco-animate">
-                    <a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url('{{asset('images/program-2.jpg')}}');">
-                        <span>Learn More</span>
-                    </a>
-                    <div class="text mt-3">
-                        <h3><a href="#">Aerobic Classes</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="package-program ftco-animate">
-                    <a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url('{{asset('images/program-3.jpg')}}');">
-                        <span>Learn More</span>
-                    </a>
-                    <div class="text mt-3">
-                        <h3><a href="#">Weight Lifting</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="package-program ftco-animate">
-                    <a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url('{{asset('images/program-4.jpg')}}');">
-                        <span>Learn More</span>
-                    </a>
-                    <div class="text mt-3">
-                        <h3><a href="#">Yoga Classes</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <!-- <div class="container">

@@ -4,6 +4,11 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ a.disabled {
+  pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+  cursor: default; /*  курсор в виде стрелки */
+  }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -27,7 +32,7 @@
   --light: #f8f9fa;
   --dark: #343a40;
   /* --DarkTurquoise: #20B2AA;
-  --Goldenrod:	#B8860B; */
+  --#AFEEEE:	#B8860B; */
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -6283,7 +6288,7 @@ button.bg-dark:focus {
 
 .pr-4,
 .px-4 {
-  padding-right: 1.5rem !important; }
+  padding-right: 1.0rem !important; }
 
 .pb-4,
 .py-4 {
@@ -6291,7 +6296,7 @@ button.bg-dark:focus {
 
 .pl-4,
 .px-4 {
-  padding-left: 1.5rem !important; }
+  padding-left: 1.0rem !important; }
 
 .p-5 {
   padding: 3rem !important; }
@@ -7270,7 +7275,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 body {
-  font-family: "Barlow Semi Condensed", Arial, sans-serif;
+  font-family: "Rubik";
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
@@ -7506,7 +7511,8 @@ h1, h2, h3, h4, h5,
   background: DarkTurquoise;
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  /*letter-spacing: 0px; */
+}
   .navbar-brand:after {
     position: absolute;
     left: 0;
@@ -7519,7 +7525,7 @@ h1, h2, h3, h4, h5,
     -ms-transform: translateY(100%);
     transform: translateY(100%);
     border-style: solid;
-    border-width: 20px 73px 0 73px;
+    border-width: 20px 77px 0 77px;
     border-color: DarkTurquoise transparent transparent transparent; }
 
 .owl-carousel {
@@ -7869,15 +7875,15 @@ h1, h2, h3, h4, h5,
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
     background: DarkTurquoise;
-    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -7900,15 +7906,15 @@ h1, h2, h3, h4, h5,
 
 .ftco-gradient {
   background: DarkTurquoise;
-  background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-  background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 ); }
+  background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+  background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 ); }
   .ftco-gradient .heading-section .subheading {
     color: #fff; }
   .ftco-gradient .heading-section h2 {
@@ -7933,14 +7939,14 @@ h1, h2, h3, h4, h5,
     -webkit-transition: all 0.6s ease;
     -ms-transition: all 0.6s ease;
     transition: all 0.6s ease;
-    background: Goldenrod;
-    background: -moz-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, Goldenrod), color-stop(100%, DarkTurquoise));
-    background: -webkit-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -o-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -ms-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='Goldenrod', endColorstr='DarkTurquoise', GradientType=1 ); }
+    background: #AFEEEE;
+    background: -moz-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #AFEEEE), color-stop(100%, DarkTurquoise));
+    background: -webkit-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -o-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -ms-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFEEEE', endColorstr='DarkTurquoise', GradientType=1 ); }
     .gallery .icon span {
       color: #fff; }
   .gallery:hover .icon, .gallery:focus .icon {
@@ -8003,15 +8009,15 @@ h1, h2, h3, h4, h5,
     -o-transform: skewY(5deg);
     transform: skewY(5deg);
     background: DarkTurquoise;
-    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 ); }
+    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 ); }
   .ftco-degree-bottom:after {
     content: '';
     position: absolute;
@@ -8026,14 +8032,14 @@ h1, h2, h3, h4, h5,
     -ms-transform: skewY(-5deg);
     -o-transform: skewY(-5deg);
     transform: skewY(-5deg);
-    background: Goldenrod;
-    background: -moz-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, Goldenrod), color-stop(100%, DarkTurquoise));
-    background: -webkit-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -o-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -ms-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='Goldenrod', endColorstr='DarkTurquoise', GradientType=1 ); }
+    background: #AFEEEE;
+    background: -moz-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #AFEEEE), color-stop(100%, DarkTurquoise));
+    background: -webkit-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -o-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -ms-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFEEEE', endColorstr='DarkTurquoise', GradientType=1 ); }
 
 .services {
   width: 100%;
@@ -8043,15 +8049,15 @@ h1, h2, h3, h4, h5,
     width: 100px;
     height: 95px;
     background: DarkTurquoise;
-    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 ); }
+    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 ); }
     .services .icon span {
       font-size: 40px;
       color: #fff; }
@@ -8072,15 +8078,15 @@ h1, h2, h3, h4, h5,
       padding: 10px 15px;
       color: #fff;
       background: DarkTurquoise;
-      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
@@ -8092,14 +8098,14 @@ h1, h2, h3, h4, h5,
       transition: all 0.3s ease;
       opacity: 0; }
       .package-program .img span:hover, .package-program .img span:focus {
-        background: Goldenrod;
-        background: -moz-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-        background: -webkit-gradient(left bottom, right top, color-stop(0%, Goldenrod), color-stop(100%, DarkTurquoise));
-        background: -webkit-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-        background: -o-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-        background: -ms-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-        background: linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='Goldenrod', endColorstr='DarkTurquoise', GradientType=1 ); }
+        background: #AFEEEE;
+        background: -moz-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, #AFEEEE), color-stop(100%, DarkTurquoise));
+        background: -webkit-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+        background: -o-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+        background: -ms-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+        background: linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFEEEE', endColorstr='DarkTurquoise', GradientType=1 ); }
   .package-program .text h3 {
     margin-bottom: 10px;
     font-size: 22px;
@@ -8113,15 +8119,15 @@ h1, h2, h3, h4, h5,
 
 .btn-custom {
   background: DarkTurquoise;
-  background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-  background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+  background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+  background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
   color: #fff;
   display: block;
   font-size: 18px;
@@ -8169,15 +8175,15 @@ h1, h2, h3, h4, h5,
         width: 40px;
         height: 40px;
         background: DarkTurquoise;
-        background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-        background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 ); }
+        background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+        background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 ); }
         .coach .text .ftco-social-media li a span {
           font-size: 24px;
           color: #fff; }
@@ -8193,14 +8199,14 @@ h1, h2, h3, h4, h5,
     font-weight: 500; }
   .table .thead-primary {
     background: DarkTurquoise;
-    background: Goldenrod;
-    background: -moz-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, Goldenrod), color-stop(100%, DarkTurquoise));
-    background: -webkit-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -o-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -ms-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='Goldenrod', endColorstr='DarkTurquoise', GradientType=1 ); }
+    background: #AFEEEE;
+    background: -moz-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #AFEEEE), color-stop(100%, DarkTurquoise));
+    background: -webkit-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -o-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -ms-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFEEEE', endColorstr='DarkTurquoise', GradientType=1 ); }
     .table .thead-primary tr th {
       padding: 20px 10px;
       color: #fff !important;
@@ -8240,14 +8246,14 @@ h1, h2, h3, h4, h5,
   width: 100%;
   position: relative;
   background: #fff;
-  background: Goldenrod;
-  background: -moz-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, Goldenrod), color-stop(100%, DarkTurquoise));
-  background: -webkit-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-  background: -o-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-  background: -ms-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-  background: linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='Goldenrod', endColorstr='DarkTurquoise', GradientType=1 ); }
+  background: #AFEEEE;
+  background: -moz-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #AFEEEE), color-stop(100%, DarkTurquoise));
+  background: -webkit-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+  background: -o-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+  background: -ms-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+  background: linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFEEEE', endColorstr='DarkTurquoise', GradientType=1 ); }
   .ftco-appointment .overlay {
     position: absolute;
     top: 0;
@@ -8441,15 +8447,15 @@ h1, h2, h3, h4, h5,
       .testimony-section .owl-dots .owl-dot.active {
         background: DarkTurquoise;
         background: DarkTurquoise;
-        background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-        background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 ); }
+        background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+        background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 ); }
 
 .testimony-wrap {
   display: block;
@@ -8475,15 +8481,15 @@ h1, h2, h3, h4, h5,
       .testimony-wrap .user-img .quote i {
         color: DarkTurquoise;
         background: DarkTurquoise;
-        background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-        background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-        background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+        background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+        background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+        background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
   .testimony-wrap .name {
@@ -8508,15 +8514,15 @@ h1, h2, h3, h4, h5,
       height: 30px;
       background: DarkTurquoise;
       background: DarkTurquoise;
-      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 ); }
+      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 ); }
 
 .ftco-social a {
   width: 30px;
@@ -8557,7 +8563,7 @@ textarea.form-control {
   background: DarkTurquoise !important; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 2em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
@@ -8738,18 +8744,18 @@ textarea.form-control {
     left: 0;
     right: 0;
     bottom: 0;
-    background: Goldenrod;
-    background: -moz-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, Goldenrod), color-stop(100%, DarkTurquoise));
-    background: -webkit-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -o-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: -ms-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    background: linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='Goldenrod', endColorstr='DarkTurquoise', GradientType=1 );
+    background: #AFEEEE;
+    background: -moz-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #AFEEEE), color-stop(100%, DarkTurquoise));
+    background: -webkit-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -o-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: -ms-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    background: linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFEEEE', endColorstr='DarkTurquoise', GradientType=1 );
     opacity: .8; }
 
 .ftco-counter {
-  padding: 7em 0; }
+  padding: 2em 0; }
   @media (max-width: 1199.98px) {
     .ftco-counter {
       background-position: center center !important; } }
@@ -8902,15 +8908,15 @@ textarea.form-control {
       font-weight: 500;
       color: DarkTurquoise;
       background: DarkTurquoise;
-      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
   .block-7 .excerpt {
@@ -8930,15 +8936,15 @@ textarea.form-control {
   .block-7 .btn-primary {
     color: #fff;
     background: DarkTurquoise;
-    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
     border: transparent;
     text-transform: uppercase;
     font-style: 16px;
@@ -8946,14 +8952,14 @@ textarea.form-control {
     letter-spacing: 1px; }
     .block-7 .btn-primary:hover, .block-7 .btn-primary:focus {
       border: transparent;
-      background: Goldenrod;
-      background: -moz-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, Goldenrod), color-stop(100%, DarkTurquoise));
-      background: -webkit-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-      background: -o-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-      background: -ms-linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-      background: linear-gradient(45deg, Goldenrod 0%, DarkTurquoise 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='Goldenrod', endColorstr='DarkTurquoise', GradientType=1 );
+      background: #AFEEEE;
+      background: -moz-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, #AFEEEE), color-stop(100%, DarkTurquoise));
+      background: -webkit-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+      background: -o-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+      background: -ms-linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+      background: linear-gradient(45deg, #AFEEEE 0%, DarkTurquoise 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFEEEE', endColorstr='DarkTurquoise', GradientType=1 );
       color: #fff; }
 
 .block-18 .icon > span {
@@ -8986,15 +8992,15 @@ textarea.form-control {
       color: #fff;
       border: 1px solid transparent;
       background: DarkTurquoise;
-      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-      background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 ); }
+      background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+      background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+      background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 ); }
 
 .contact-section .contact-info p span {
   color: #000; }
@@ -9034,27 +9040,27 @@ textarea.form-control {
 
 .contact-form .btn-primary {
   background: DarkTurquoise;
-  background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-  background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-  background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+  background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+  background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+  background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
   border: transparent; }
   .contact-form .btn-primary:hover {
     background: DarkTurquoise;
-    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, Goldenrod));
-    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: -o-linear-gradient(315deg, DarkTurquoise 0%, Goldenrod 100%);
-    background: linear-gradient(135deg, DarkTurquoise 0%, Goldenrod 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='Goldenrod', GradientType=1 );
+    background: -moz-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, DarkTurquoise), color-stop(100%, #AFEEEE));
+    background: -webkit-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -ms-linear-gradient(-45deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -webkit-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: -o-linear-gradient(315deg, DarkTurquoise 0%, #AFEEEE 100%);
+    background: linear-gradient(135deg, DarkTurquoise 0%, #AFEEEE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='DarkTurquoise', endColorstr='#AFEEEE', GradientType=1 );
     border: transparent;
     color: #fff; }
 

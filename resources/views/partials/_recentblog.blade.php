@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
-                <h3 class="subheading">Articles</h3>
-                <h2 class="mb-1">Recent Blog</h2>
+                <h3 class="subheading">@lang('site-lang.footer-blog-title')</h3>
+                <h2 class="mb-1">@lang('site-lang.footer-blog-title')</h2>
             </div>
         </div>
         <div class="row d-flex">
