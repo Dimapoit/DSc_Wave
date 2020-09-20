@@ -3,22 +3,6 @@
  	easing: 'slide'
  });
 
- // Set iframe attributes when the show instance method is called
-// $("#videoModal").on("show.bs.modal", function(event) {
-// 	let button = $(event.relatedTarget); // Button that triggered the modal
-// 	let url = button.data("video");      // Extract url from data-video attribute
-  
-// 	$(this).find("iframe").attr({
-// 		src: url,
-// 		allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-// 	});
-//   });
-  
-//   // Remove iframe attributes when the modal has finished being hidden from the user
-//   $("#videoModal").on("hidden.bs.modal", function() {
-// 	$("#videoModal iframe").removeAttr("src allow");
-//   });
-
 (function($) {
 
 	"use strict";
@@ -50,7 +34,7 @@
 
 	// loader
 	var loader = function() {
-		setTimeout(function() { 
+		setTimeout(function() {
 			if($('#ftco-loader').length > 0) {
 				$('#ftco-loader').removeClass('show');
 			}
@@ -135,25 +119,24 @@
 	};
 	carousel();
 
-	$('nav .dropdown').hover(function(){
-		var $this = $(this);
-		// 	 timer;
-		// clearTimeout(timer);
-		$this.addClass('show');
-		$this.find('> a').attr('aria-expanded', true);
-		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
-		$this.find('.dropdown-menu').addClass('show');
-	}, function(){
-		var $this = $(this);
-			// timer;
-		// timer = setTimeout(function(){
-			$this.removeClass('show');
-			$this.find('> a').attr('aria-expanded', false);
-			// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
-			$this.find('.dropdown-menu').removeClass('show');
-		// }, 100);
-	});
-
+	// $('nav .dropdown').hover(function(){
+	// 	var $this = $(this);
+	// 	// 	 timer;
+	// 	// clearTimeout(timer);
+	// 	$this.addClass('show');
+	// 	$this.find('> a').attr('aria-expanded', true);
+	// 	// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
+	// 	$this.find('.dropdown-menu').addClass('show');
+	// }, function(){
+	// 	var $this = $(this);
+	// 		// timer;
+	// 	// timer = setTimeout(function(){
+	// 		$this.removeClass('show');
+	// 		$this.find('> a').attr('aria-expanded', false);
+	// 		// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
+	// 		$this.find('.dropdown-menu').removeClass('show');
+	// 	// }, 100);
+	// });
 
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
@@ -169,19 +152,19 @@
 
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
-					navbar.addClass('scrolled');	
+					navbar.addClass('scrolled');
 				}
-			} 
+			}
 			if (st < 150) {
 				if ( navbar.hasClass('scrolled') ) {
 					navbar.removeClass('scrolled sleep');
 				}
-			} 
+			}
 			if ( st > 350 ) {
 				if ( !navbar.hasClass('awake') ) {
-					navbar.addClass('awake');	
+					navbar.addClass('awake');
 				}
-				
+
 				if(sd.length > 0) {
 					sd.addClass('sleep');
 				}
@@ -199,9 +182,9 @@
 	};
 	scrollWindow();
 
-	
+
 	var counter = function() {
-		
+
 		$('#section-counter').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
@@ -218,7 +201,7 @@
 					  }, 7000
 					);
 				});
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -231,7 +214,7 @@
 		$('.ftco-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -253,9 +236,9 @@
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '95%' } );

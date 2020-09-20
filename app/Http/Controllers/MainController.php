@@ -10,6 +10,7 @@ use App\Model\Dancedirection;
 use App\Model\Gallery;
 use App\Model\Logo;
 use App\Model\Slider;
+use App\Model\Video;
 
 class MainController extends Controller
 {
@@ -45,8 +46,9 @@ class MainController extends Controller
         //$contact = $this->contactData();
         $contact = Contact::all();
         $locale = app()->getLocale();
+        $video = Video::all();
         //dd($contact);
-        return view('main', ['page'=>'main'], compact('sliderData', 'logoData', 'abouts', 'dancedir', 'coaches', 'gallery', 'contact', 'locale'));
+        return view('main', ['page'=>'main'], compact('sliderData', 'logoData', 'abouts', 'dancedir', 'coaches', 'gallery', 'contact', 'video'));
     }
 
     public function sliderData()
@@ -321,35 +323,40 @@ class MainController extends Controller
 
     public function services()
     {
-        $contact = $this->contactData();
+        //$contact = $this->contactData();
+        $contact = Contact::all();
         $locale = app()->getLocale();
         return view('services', ['page'=>'services'], compact('contact', 'locale'));
     }
 
     public function rent()
     {
-        $contact = $this->contactData();
+        //$contact = $this->contactData();
+        $contact = Contact::all();
         $locale = app()->getLocale();
         return view('rent', ['page'=>'rent'], compact('contact', 'locale'));
     }
 
     public function cafe()
     {
-        $contact = $this->contactData();
+        //$contact = $this->contactData();
+        $contact = Contact::all();
         $locale = app()->getLocale();
         return view('cafe', ['page'=>'cafe'], compact('contact', 'locale'));
     }
 
     public function shop()
     {
-        $contact = $this->contactData();
+        //$contact = $this->contactData();
+        $contact = Contact::all();
         $locale = app()->getLocale();
         return view('cafe', ['page'=>'cafe'], compact('contact', 'locale'));
     }
 
     public function studio()
     {
-        $contact = $this->contactData();
+        //$contact = $this->contactData();
+        $contact = Contact::all();
         $locale = app()->getLocale();
         return view('studio', ['page'=>'studio'], compact('contact', 'locale'));
     }
@@ -362,7 +369,8 @@ class MainController extends Controller
     public function gallery()
     {
         $gallery = $this->galleryData();
-        $contact = $this->contactData();
+        //$contact = $this->contactData();
+        $contact = Contact::all();
         $locale = app()->getLocale();
 
         return view('gallery', ['page'=>'gallery'], compact('gallery', 'contact', 'locale'));
@@ -370,7 +378,8 @@ class MainController extends Controller
 
     public function contact()
     {
-        $contact = $this->contactData();
+        //$contact = $this->contactData();
+        $contact = Contact::all();
         $locale = app()->getLocale();
         return view('contact', ['page'=>'contact'], compact('contact', 'locale'));
     }

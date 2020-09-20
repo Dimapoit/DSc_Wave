@@ -14,9 +14,9 @@
                             <!-- <span>Learn More</span> -->
                         </div>
                         <div class="text mt-3">
-                            <h3><a href="#" class='disabled'>{{$locale == 'ua' ? $item->title_ua : $item->title_ru}}</a></h3>
+                            <h3><a href="#" class='disabled'>{{$item->title}}</a></h3>
 
-                            <p>{{$locale == 'ua' ? $item->text_ua : $item->text_ru}}</p>
+                            <p>{{$item->text}}</p>
                         </div>
                     </div>
                 </div>

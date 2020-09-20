@@ -2654,7 +2654,7 @@ input[type="button"].btn-block {
 
 .dropdown-menu.show {
   display: block; }
-
+/**/
 .dropdown-header {
   display: block;
   padding: 0.5rem 1.5rem;
@@ -9406,4 +9406,7 @@ textarea.form-control {
     stroke-dashoffset: -35px; }
   100% {
     stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
+    stroke-dashoffset: -136px; }
+}
+
+
