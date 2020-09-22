@@ -8,11 +8,13 @@
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item {{$page == 'main' ? 'active' : ''}}"><a href="{{route('main')}}" class="nav-link">@lang('site-lang.header-main')</a></li>
-{{--                <li class="nav-item {{$page == 'services' ? 'active' : ''}}"><a href="{{route('services')}}" class="nav-link">@lang('site-lang.header-services')</a></li>--}}
+{{--                <li class="nav-item {{$page == 'main' ? 'active' : ''}}"><a href="{{route('main')}}" class="nav-link">@lang('site-lang.header-main')</a></li>--}}
+                <li class="nav-item {{Route::currentRouteName() == 'main' ? 'active' : ''}}"><a href="{{route('main')}}" class="nav-link">@lang('site-lang.header-main')</a></li>
+
+                {{--                <li class="nav-item {{$page == 'services' ? 'active' : ''}}"><a href="{{route('services')}}" class="nav-link">@lang('site-lang.header-services')</a></li>--}}
                 <li class="nav-item"><a href="https://www.instagram.com/mariupol_dancesport/" class="nav-link " target="_blank"><ion-icon name="logo-instagram"></ion-icon>@lang('site-lang.header-news')</a></li>
-                <!-- <li class="nav-item {{$page == 'gallery' ? 'active' : ''}}"><a href="{{route('gallery')}}" class="nav-link">@lang('site-lang.header-gallery')</a></li> -->
-                <li class="nav-item {{$page == 'contact' ? 'active' : ''}}"><a href="{{route('contact')}}" class="nav-link">@lang('site-lang.header-contact')</a></li>
+                <li class="nav-item {{Route::currentRouteName() == 'gallery' ? 'active' : ''}}"><a href="{{route('gallery')}}" class="nav-link">@lang('site-lang.header-gallery')</a></li>
+                <li class="nav-item {{Route::currentRouteName() == 'contact' ? 'active' : ''}}"><a href="{{route('contact')}}" class="nav-link">@lang('site-lang.header-contact')</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         @lang('site-lang.header-services')

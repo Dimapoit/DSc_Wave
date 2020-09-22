@@ -1,7 +1,5 @@
 @extends('layouts.master')
 
-@section('title', 'Gallery')
-
 @section('menu')
     @parent
 @endsection

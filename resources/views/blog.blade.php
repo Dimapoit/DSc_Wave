@@ -1,7 +1,5 @@
 @extends('layouts.master')
 
-@section('title', 'Blog')
-
 @section('content')
 
     @include('partials._smallheader')

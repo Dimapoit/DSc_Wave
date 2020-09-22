@@ -23,5 +23,33 @@ return [
     'danceDirections-title' => 'Танцювальні напрямки',
     'about-welcome' => 'Вітаємо',
     'about-toOurCenter' => 'у нашому центрі',
-    'coaches' => 'Наші тренери'
+    'coaches' => 'Наші тренери',
+
+    'main-title' => 'ТСЦ Wave Маріуполь',
+    'main-description' => 'Танцювальный спортивний центр Wave Маріуполь, спортивно-бальні танці, baby-dance, чирлідинг, постановка весільного танцю, аргентинске танго, pro-am',
+    'main-keywords' => '',
+
+    'contact-title' => 'ТСЦ Wave контакты',
+    'contact-description' => 'Як нас знайти',
+    'contact-keywords' => '',
+
+    'gallery-title' => 'ТСЦ Wave фотогаллерея',
+    'gallery-description' => 'Наша фотогалерея',
+    'gallery-keywords' => '',
+
+    'rent-title' => 'ТСЦ Wave оренда залів',
+    'rent-description' => 'Оренда танцювальних залів',
+    'rent-keywords' => '',
+
+    'cafe-title' => 'ТСЦ Wave фреш-бар кафе',
+    'cafe-description' => '',
+    'cafe-keywords' => '',
+
+    'shop-title' => 'ТСЦ Wave магазин',
+    'shop-description' => 'Магазин спеціалізованого танцювального одягу',
+    'shop-keywords' => '',
+
+    'studio-title' => 'ТСЦ Wave Ателье',
+    'studio-description' => 'Ательє спеціалізованого танцювального одягу',
+    'studio-keywords' => '',
 ];

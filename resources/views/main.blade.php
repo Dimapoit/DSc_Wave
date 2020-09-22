@@ -1,7 +1,5 @@
 @extends('layouts.master')
 
-@section('title', 'DSC-Wave')
-
 @section('menu')
     @parent
 @endsection
@@ -10,16 +8,11 @@
 
     @include('partials._slider')
 
-
-
     @include('partials._about')
 
     @include('partials._dancedirections')
 
-
     @include('partials._coaches')
-
-
 
 {{--    @include('partials._recentblog')--}}
 

@@ -1,5 +1,9 @@
 <head>
-    <title>DSC-Wave</title>
+
+    <link rel="shortcut icon" href={{asset('favicon.ico')}} type="image/x-icon">
+    <title>{!! MetaTag::tag('title') !!}</title>
+    <meta name="description" content="{!! MetaTag::tag('description') !!}">
+    <meta name="keywords" content="{!! MetaTag::tag('keywords') !!}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

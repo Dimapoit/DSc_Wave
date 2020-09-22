@@ -1,7 +1,5 @@
 @extends('layouts.master')
 
-@section('title', 'Contact')
-
 @section('menu')
     @parent
 @endsection
@@ -14,10 +12,10 @@
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                
+
                 <h1 class="mb-3 bread">Contact Us</h1>
                 <p class="breadcrumbs"><span class="mr-2"><a href="{{route('main')}}">@lang('site-lang.header-main')</a></span> <span>@lang('site-lang.header-contact')</span></p>
-                    
+
             </div>
         </div>
     </div>
