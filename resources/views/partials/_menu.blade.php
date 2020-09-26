@@ -2,7 +2,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand py-2 px-4" href="{{route('main')}}">Wave-DSC</a>
+        <a class="navbar-brand px-1" href="{{route('main')}}">
+            <img src={{asset('images\logo\Wave-dsc_logo.jpg')}} class="img-fluid" alt="Responsive image">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>

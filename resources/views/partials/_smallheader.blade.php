@@ -1,4 +1,4 @@
-<section class="hero-wrap" style="background-image: url('{{asset('images/bg_2.jpg')}}');">
+<section class="hero-wrap" style="background-image: url({{asset('images/gallery/main.jpg')}});">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
